@@ -1,0 +1,216 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+h4 {
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    font-size: 15px;
+    font-weight: 6=400;
+    color: hsl(217, 12%, 63%);
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 370px;
+    border-radius: 16px;
+    margin: 15% auto;
+    background-color: hsl(213, 19%, 18%);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+
+/* radios */
+
+input[type="radio"]:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 90%) !important;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    width: 47px;
+    height: 46px;
+    border-radius: 23px;
+    background-color: hsl(216, 8%, 25%);
+    color: hsl(217, 12%, 63%);
+    -webkit-appearance: none;
+    /*to disable the default appearance of radio button*/
+    -moz-appearance: none;
+}
+
+input[type="radio"]:focus {
+    /*no need, if you don't disable default appearance*/
+    outline: none;
+    /*to remove the square border on focus*/
+}
+
+input[type="radio"]:checked {
+    /*no need, if you don't disable default appearance*/
+    background-color: hsl(25, 97%, 53%);
+}
+
+input[type="radio"]:checked~span:first-of-type {
+    color: white;
+}
+
+label span:first-of-type {
+    position: relative;
+    left: -36px;
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+}
+
+label span {
+    position: relative;
+    top: -17px;
+    cursor: pointer;
+}
+
+label span:hover {
+    color: hsl(0, 0%, 90%);
+}
+
+
+/* end of radios */
+
+.ratings {
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.rate {
+    padding: 15px 20px;
+    margin: 10px;
+    display: inline;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: hsl(216, 8%, 25%);
+    color: hsl(217, 12%, 63%);
+}
+
+input {
+    border: none;
+}
+
+.submit-btn {
+    cursor: pointer;
+    margin: 25px 11px;
+    font-weight: 400;
+    width: 90%;
+    font-size: 15px;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 90%);
+}
+
+.star {
+    padding: 15px;
+    background-color: hsl(216, 8%, 25%);
+    border-radius: 50%;
+}
+
+.rate:hover {
+    background-color: hsl(216, 12%, 54%);
+    color: hsl(0, 0%, 90%);
+}
+
+.thank-you {
+    position: relative;
+    top: 30px;
+    right: -25%;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.p-thank-you {
+    margin-top: 60px;
+    text-align: center;
+    padding: 5px 5px;
+    color: hsl(25, 97%, 53%);
+    font-size: 15px;
+}
+
+.thanks-wrap {
+    background-color: hsl(216, 8%, 25%);
+    width: 180px;
+    border-radius: 20px;
+    position: relative;
+    left: 90px;
+}
+
+.bold-thanks {
+    text-align: center;
+    color: hsl(0, 0%, 90%);
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 0px !important;
+}
+
+.thanks-text {
+    text-align: center;
+    text-justify: center;
+    padding-top: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-bottom: 40px;
+}
+
+
+/* For mobile phones */
+
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 260px;
+    }
+    .first-p {
+        font-size: 12px;
+        line-height: 19px;
+    }
+    .rate {
+        padding: 10px 14px;
+        margin: 5px;
+        display: inline;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .star {
+        padding: 10px;
+    }
+    .thanks-wrap {
+        position: relative;
+        left: 35px;
+    }
+    .p-thank-you {
+        font-size: 12px;
+    }
+    .thank-you {
+        position: relative;
+        left: 38px;
+    }
+    .thanks-text {
+        text-align: center;
+        text-justify: center;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 40px;
+        font-size: 12px;
+        line-height: 19px;
+    }
+}
